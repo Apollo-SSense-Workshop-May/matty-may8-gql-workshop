@@ -15,7 +15,7 @@ type Order @key(fields: "id") {
   """
   Each order has a unique id which is separate from the user or items they bought
   """
-  id: ID! @requiresScopes(scopes: [["order:items"]])
+  id: ID!
 
   """
   The user who made the purchase
